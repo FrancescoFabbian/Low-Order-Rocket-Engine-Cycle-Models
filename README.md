@@ -15,22 +15,28 @@ The objective was to develop and assess modular thermodynamic models capable of 
 
 The models use steady-state, primarily **zero-dimensional (0D) component calculations**, with **quasi-one-dimensional (quasi-1D) nozzle expansion**. They represent pumps, turbines, combustion chambers and preburners, heat exchangers, mixers, valves and nozzles. Component-level predictions and cycle results were compared with reference calculations, including published work from the **German Aerospace Center (DLR)**.
 
+
 ## Repository structure
 
-
-Low\_order\_rocket\_engines\_cycle\_models/
+```text
+Low-Order-Rocket-Engine-Cycle-Models/
 ├── MATLAB Codes/
 │   ├── Main/
-│   │   ├── MAIN\_SSME.m
-│   │   ├── SSME\_Validation.m
-│   │   ├── MAIN\_SE\_21\_D.m
-│   │   └── SE\_21\_D\_Validation.m
+│   │   ├── MAIN_SSME.m
+│   │   ├── SSME_Validation.m
+│   │   ├── MAIN_SE_21_D.m
+│   │   └── SE_21_D_Validation.m
 │   └── Functions/
-│       └── \[component models and supporting MATLAB functions]
+│       └── [Component models and supporting MATLAB functions]
 ├── Sources/
-│   └── \[reference material and engine schematics]
+│   ├── SSME.png
+│   └── SE-21D.png
 ├── Presentation Group 2.pdf
 └── README.md
+```
+
+The `Main` folder contains the two engine-cycle scripts and their corresponding reference-comparison scripts. These scripts call the component and supporting functions stored in `Functions`. The group presentation documents the modelling approach and selected results.
+
 
 
 The **`Main`** folder contains the two engine-cycle scripts and their corresponding reference-comparison scripts. These scripts call the component and supporting functions stored in **`Functions`**. The group presentation documents the modelling approach and selected results.
